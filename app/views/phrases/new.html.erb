@@ -1,0 +1,6 @@
+<h1>Enter Your Word to Generate a Phrase</h1>
+<%= simple_form_for @phrase do |f| %>
+	<%= f.input :word %>
+	<br />
+	<%= f.submit 'Generate Phrase', class: 'btn btn-primary' %>
+<% end %>
