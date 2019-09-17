@@ -1,1 +1,7 @@
 <h1>Welcome to my Quiz #2 Web App!</h1>
+
+<%= link_to 'Create a Phrase', new_phrase_path %>
+
+<% @phrases.each do |phrase| %>
+	<li><%= phrase.word %></li>
+<% end %>
